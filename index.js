@@ -10,7 +10,8 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
-
+//.map() returns a new array that is the same length as the OG
 const titleCased = () => {
-  return tutorials
+  return tutorials.map((word.charAt(0).toUpperCase() + word.slice(1));) // need a function
 }
+
