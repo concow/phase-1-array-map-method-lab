@@ -14,9 +14,9 @@ const tutorials = [
 //.map() returns a new array that is the same length as the OG
 const titleCased = (input) => {
   return tutorials.map(line => {    // need a function
-    const tokens = line.split(' ');
+    const words = line.split(' ');
     const capitalizedTokens =
-      tokens.map(token => token.charAt(0).toUpperCase() + token.slice(1));
+      words.map(token => token.charAt(0).toUpperCase() + token.slice(1));
     const response = capitalizedTokens.join(' ');
     return response;
   });
